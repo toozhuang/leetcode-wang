@@ -10,11 +10,10 @@ var removeDuplicates = function (nums) {
     let slowI = 0;
     let fastI = 1;
     debugger
-    for (;fastI < nums.length; fastI++) {
+    for (; fastI < nums.length; fastI++) {
         if (nums[slowI] !== nums[fastI]) {
             nums[slowI++] = nums[fastI]
         }
-        console.log('------',fastI)
     }
     return slowI + 1;
 };
