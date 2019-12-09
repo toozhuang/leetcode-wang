@@ -6,16 +6,16 @@
  * @param {number[]} nums
  * @return {number}
  */
-var removeDuplicates = function (nums) {
-    let slowI = 0;
-    let fastI = 1;
-    debugger
-    for (; fastI < nums.length; fastI++) {
-        if (nums[slowI] !== nums[fastI]) {
-            nums[slowI++] = nums[fastI]
-        }
+var removeDuplicates = function(nums) {
+  let slowI = 0;
+  let fastI = 1;
+  for (; fastI < nums.length; fastI++) {
+    if (nums[slowI] !== nums[fastI]) {
+      nums[slowI] = nums[fastI];
+      slowI = slowI + 1;
     }
-    return slowI + 1;
+  }
+  return slowI + 1;
 };
 
-console.log(removeDuplicates([1, 1, 2]))
+console.log(removeDuplicates([1, 1, 2]));
