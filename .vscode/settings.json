@@ -3,5 +3,7 @@
 		"leecode",
 		"nums"
 	],
-	"prettier.requireConfig": true
+	"prettier.requireConfig": true,
+	"editor.fontFamily": "Hermit,fonFira Code,Menlo, Monaco, 'Courier New', monospace ",
+	"editor.fontSize": 17
 }
